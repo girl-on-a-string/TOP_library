@@ -2,3 +2,33 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container {
+    width: 30%;
+    height: 30%;
+
+    #book-display {
+        border: .0625rem solid black;
+    }
+
+    #add {
+        text-align: center;
+        padding: .625rem;
+
+        button {
+            background-color: black;
+            border: none;
+            color: white;
+            border-radius: .625rem;
+            padding: .625rem;
+        }
+    }
+}
