@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: monospace;
 }
 
 body {
@@ -15,8 +16,27 @@ body {
     width: 30%;
     height: 30%;
 
-    #book-display {
+    main {
         border: .0625rem solid black;
+        padding: .625rem;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 1fr 5fr;
+
+        header {
+            text-align: center;
+            position: sticky;
+            border: .0625rem solid black;
+            margin-bottom: .625rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #book-list {
+            border: .0625rem solid black;
+            overflow: scroll;
+        }
     }
 
     #add {
