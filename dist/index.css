@@ -12,12 +12,24 @@ body {
   height: 100vh;
 }
 
+#overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: none;
+}
+
 #popup {
   border: 0.0625rem solid black;
   padding: 0.625rem;
   text-align: center;
   display: none;
   position: absolute;
+  z-index: 3;
 }
 #popup h2 {
   margin: 0rem 0.625rem 0.625rem 0.625rem;
