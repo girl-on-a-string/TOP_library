@@ -46,4 +46,8 @@ body {
   color: white;
   border-radius: 0.625rem;
   padding: 0.625rem;
+}
+
+#popup {
+  border: 0.0625rem solid black;
 }/*# sourceMappingURL=index.css.map */

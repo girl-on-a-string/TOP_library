@@ -1,7 +1,12 @@
 //variables
 
-const addSection = document.getElementById("add");
+const addBook = document.getElementById("add-book");
 
+// popup on addbook click
+
+addBook.addEventListener("click", () => {
+   
+})
 
 //
 
