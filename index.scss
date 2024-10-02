@@ -12,6 +12,32 @@ body {
     height: 100vh;
 }
 
+
+#popup {
+    border: .0625rem solid black;
+    padding: .625rem;
+    text-align: center;
+
+    h2 {
+        margin: 0rem .625rem .625rem .625rem;
+    }
+
+    form {
+        fieldset {
+            text-align: left;
+        }
+
+        #inputs {
+            margin-bottom: .625rem;
+            border: none;
+        }
+
+        #read-stats {
+            padding: .625rem;
+        }
+    }
+}
+
 #container {
     width: 30%;
     height: 30%;
@@ -53,6 +79,3 @@ body {
     }
 }
 
-#popup {
-    border: .0625rem solid black;
-}
