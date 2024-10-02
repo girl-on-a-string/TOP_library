@@ -25,10 +25,12 @@ body {
 
 #popup {
     border: .0625rem solid black;
+    background-color: white;
     padding: .625rem;
     text-align: center;
     display: none;
     position: absolute;
+    height: max-content;
     z-index: 3;
 
     h2 {
