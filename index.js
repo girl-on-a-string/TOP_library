@@ -14,6 +14,12 @@ addBook.addEventListener("click", () => {
     popUp.style.bottom = "50%";
 })
 
+overlay.addEventListener("click", () => {
+    overlay.style.display = "none";
+
+    popUp.style.display = "none";
+});
+
 //
 
 const myLibrary = [];
