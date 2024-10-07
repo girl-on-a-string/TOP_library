@@ -72,12 +72,12 @@ body {
         height: 100%;
         display: grid;
         grid-template-rows: 1fr 5fr;
+        gap: .625rem;
 
         header {
             text-align: center;
             position: sticky;
             border: .0625rem solid black;
-            margin-bottom: .625rem;
             display: flex;
             align-items: center;
             justify-content: center;
