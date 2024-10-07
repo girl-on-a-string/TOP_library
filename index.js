@@ -36,7 +36,7 @@ submit.addEventListener("click", (e) => {
     let title = document.getElementById("title").value;
     let author = document.getElementById("author").value;
     let length = document.getElementById("length").value;
-    let status = document.getElementsByClassName("status").value;
+    let status = document.getElementById("status").value;
 
     console.log(title, author, length, status);
 });
