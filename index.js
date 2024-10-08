@@ -38,7 +38,8 @@ submit.addEventListener("click", (e) => {
     let length = document.getElementById("length").value;
     let status = document.getElementById("status").value;
 
-    console.log(title, author, length, status);
+    const newBook = new book(title, author, length, status);
+    console.log(newBook);
 });
 
 // book handling
@@ -57,7 +58,9 @@ function book (title, author, length, status) { //the object constructor
 }
 
 function addBookToLibrary () {
-
+    myLibrary.push(newBook);
+    bookDisplay();
+    console.log(myLibrary);
 }
 
 addBookToLibrary();
@@ -68,4 +71,28 @@ function bookDisplay () {
     let bookItem = document.createElement("div");
     bookItem.classList.add("book-item");
     bookContainer.appendChild(bookItem);
+
+    let titleContainer = document.createElement("div");
+    let titleLabelSpan = document.createElement("span");
+    titleLabelSpan.innerText = "Title:";
+    let titleContentSpan = document.createElement("span");
+    titleContentSpan.innerText = title;
+
+    let authorContainer = document.createElement("div");
+    let authorLabelSpan = document.createElement("span");
+    authorLabelSpan.innerText = "Author";
+    let authorContentSpan = document.createElement("span");
+    authorContentSpan.innerText = author;
+
+    let countContainer = document.createElement("div");
+    let countLabelSpan = document.createElement("span");
+    countLabelSpan.innerText = "Page Count:";
+    let countContentSpan = document.createElement("span");
+    countContentSpan.innerText = length;
+
+    let statusContainer = document.createElement("div");
+    let statusForm = document.createElement("form");
+    let statusLabel = document.createElement("label");
+    statusLabel.innerText = "Read?";
+    let statusCheck = document.createElement("checkbox");
 }
