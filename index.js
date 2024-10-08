@@ -40,6 +40,7 @@ submit.addEventListener("click", (e) => {
 
     const newBook = new book(title, author, length, status);
     myLibrary.push(newBook);
+    addBookToLibrary();
     console.log(myLibrary);
 });
 
@@ -59,14 +60,6 @@ function book (title, author, length, status) { //the object constructor
 }
 
 function addBookToLibrary () {
-    // myLibrary.push(newBook);
-    bookDisplay();
-    console.log(myLibrary);
-}
-
-// book display
-
-function bookDisplay () {
     let bookItem = document.createElement("div");
     bookItem.classList.add("book-item");
     bookContainer.appendChild(bookItem);
