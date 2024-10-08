@@ -92,7 +92,9 @@ function addBookToLibrary () {
     let statusForm = document.createElement("form");
     let statusLabel = document.createElement("label");
     statusLabel.innerText = "Read?";
-    let statusCheck = document.createElement("checkbox");
+    let statusCheck = document.createElement("input");
+    statusCheck.type = "checkbox";
+    statusCheck.name = "status";
     statusContainer.appendChild(statusForm);
     statusContainer.appendChild(statusLabel);
     statusContainer.appendChild(statusCheck);
