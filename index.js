@@ -77,22 +77,36 @@ function bookDisplay () {
     titleLabelSpan.innerText = "Title:";
     let titleContentSpan = document.createElement("span");
     titleContentSpan.innerText = title;
+    titleContainer.appendChild(titleLabelSpan);
+    titleContainer.appendChild(titleContentSpan);
 
     let authorContainer = document.createElement("div");
     let authorLabelSpan = document.createElement("span");
     authorLabelSpan.innerText = "Author";
     let authorContentSpan = document.createElement("span");
     authorContentSpan.innerText = author;
+    authorContainer.appendChild(authorLabelSpan);
+    authorContainer.appendChild(authorContentSpan);
 
     let countContainer = document.createElement("div");
     let countLabelSpan = document.createElement("span");
     countLabelSpan.innerText = "Page Count:";
     let countContentSpan = document.createElement("span");
     countContentSpan.innerText = length;
+    countContainer.appendChild(countLabelSpan);
+    countContainer.appendChild(countContentSpan);
 
     let statusContainer = document.createElement("div");
     let statusForm = document.createElement("form");
     let statusLabel = document.createElement("label");
     statusLabel.innerText = "Read?";
     let statusCheck = document.createElement("checkbox");
+    statusContainer.appendChild(statusForm);
+    statusContainer.appendChild(statusLabel);
+    statusContainer.appendChild(statusCheck);
+
+    bookItem.appendChild(titleContainer);
+    bookItem.appendChild(authorContainer);
+    bookItem.appendChild(countContainer);
+    bookItem.appendChild(statusContainer);
 }
