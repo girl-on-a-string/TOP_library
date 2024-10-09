@@ -86,6 +86,20 @@ body {
         #book-list {
             border: .0625rem solid black;
             overflow: scroll;
+            padding: .625rem;
+            display: flex;
+            flex-direction: column;
+            gap: .625rem;
+
+            .book-item {
+                border: .0625rem solid black;
+                padding: .625rem;
+
+                div span:first-child, label {
+                    font-weight: bold;
+                    margin-right: .625rem;
+                }
+            }
         }
     }
 

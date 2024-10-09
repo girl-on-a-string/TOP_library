@@ -79,6 +79,18 @@ body {
 #container main #book-list {
   border: 0.0625rem solid black;
   overflow: scroll;
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+#container main #book-list .book-item {
+  border: 0.0625rem solid black;
+  padding: 0.625rem;
+}
+#container main #book-list .book-item div span:first-child, #container main #book-list .book-item label {
+  font-weight: bold;
+  margin-right: 0.625rem;
 }
 #container #add {
   text-align: center;
