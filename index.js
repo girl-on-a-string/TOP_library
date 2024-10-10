@@ -39,6 +39,7 @@ submit.addEventListener("click", (e) => {
     let status = document.getElementById("status").value;
 
     const newBook = new book(title, author, length, status);
+    console.log(newBook.itemState());
     myLibrary.push(newBook);
     addBookToLibrary(title, author, length, status);
     console.log(myLibrary);
@@ -63,6 +64,19 @@ function addBookToLibrary (title, author, length, status) {
     let bookItem = document.createElement("div");
     bookItem.classList.add("book-item");
     bookContainer.appendChild(bookItem);
+
+    let mainCont = document.createElement("div");
+    mainCont.classList.add("main-content");
+
+    let numLabel = document.createElement("div");
+    numLabel.classList.add("num-label");
+
+    let deleteContainer = document.createElement("div");
+    deleteContainer.classList.add("delete");
+
+    bookItem.appendChild(mainCont);    
+    bookItem.appendChild(numLabel);
+    bookItem.appendChild(deleteContainer);
 
     let titleContainer = document.createElement("div");
     let titleLabelSpan = document.createElement("span");
@@ -99,10 +113,10 @@ function addBookToLibrary (title, author, length, status) {
     statusContainer.appendChild(statusLabel);
     statusContainer.appendChild(statusCheck);
 
-    bookItem.appendChild(titleContainer);
-    bookItem.appendChild(authorContainer);
-    bookItem.appendChild(countContainer);
-    bookItem.appendChild(statusContainer);
+    mainCont.appendChild(titleContainer);
+    mainCont.appendChild(authorContainer);
+    mainCont.appendChild(countContainer);
+    mainCont.appendChild(statusContainer);
 
     console.log(title, author, length, status);
 }

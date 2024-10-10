@@ -94,6 +94,8 @@ body {
             .book-item {
                 border: .0625rem solid black;
                 padding: .625rem;
+                display: grid;
+                grid-template-columns: 1fr 3fr 1fr;
 
                 div span:first-child, label {
                     font-weight: bold;

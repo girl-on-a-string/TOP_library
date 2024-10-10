@@ -87,6 +87,8 @@ body {
 #container main #book-list .book-item {
   border: 0.0625rem solid black;
   padding: 0.625rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
 }
 #container main #book-list .book-item div span:first-child, #container main #book-list .book-item label {
   font-weight: bold;
