@@ -74,8 +74,8 @@ function addBookToLibrary (title, author, length, status) {
     let deleteContainer = document.createElement("div");
     deleteContainer.classList.add("delete");
 
-    bookItem.appendChild(mainCont);    
     bookItem.appendChild(numLabel);
+    bookItem.appendChild(mainCont);    
     bookItem.appendChild(deleteContainer);
 
     let titleContainer = document.createElement("div");
