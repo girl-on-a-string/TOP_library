@@ -5,6 +5,7 @@ const popUp = document.getElementById("popup");
 const overlay = document.getElementById("overlay");
 const submit = document.getElementById("submit");
 const bookContainer = document.getElementById("book-list");
+let count = 0;
 
 // popup on addbook click
 
@@ -70,6 +71,7 @@ function addBookToLibrary (title, author, length, status) {
 
     let numLabel = document.createElement("div");
     numLabel.classList.add("num-label");
+    numLabel.innerText = count;
 
     let deleteContainer = document.createElement("div");
     deleteContainer.classList.add("delete");

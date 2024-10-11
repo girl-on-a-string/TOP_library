@@ -90,6 +90,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
 }
+#container main #book-list .book-item .num-label {
+  font-size: 4.6875rem;
+  font-weight: bold;
+  text-align: center;
+}
 #container main #book-list .book-item div span:first-child, #container main #book-list .book-item label {
   font-weight: bold;
   margin-right: 0.625rem;
